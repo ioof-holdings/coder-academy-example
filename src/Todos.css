@@ -1,0 +1,25 @@
+.Todos-todos {
+  padding: 0;
+}
+
+.Todos-todo {
+  color: white;
+  list-style-type: none;
+}
+
+.Todos-todo-remove-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.Todos-todo-remove-button:hover,
+.Todos-todo-remove-button:focus {
+text-decoration: none;
+}
