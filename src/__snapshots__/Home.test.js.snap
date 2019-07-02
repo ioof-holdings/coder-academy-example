@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render home component 1`] = `
+<div>
+  <div
+    class="Home"
+    data-testid="home"
+  >
+    <header
+      class="Home-header"
+    >
+      <img
+        alt="logo"
+        class="Home-logo"
+        src="logo.svg"
+      />
+      <p>
+        Edit 
+        <code>
+          src/App.js
+        </code>
+         and save to reload.
+      </p>
+      <a
+        class="Home-link"
+        href="https://reactjs.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
+</div>
+`;

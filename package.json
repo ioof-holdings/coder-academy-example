@@ -8,10 +8,14 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
+  "devDependencies": {
+    "@testing-library/react": "^8.0.4",
+    "jest-dom": "^3.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -28,5 +32,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom" : [
+      "<rootDir>/src/**/*.js",
+       "!<rootDir>/src/index.js" , 
+       "!<rootDir>/src/serviceWorker.js",
+       "!<rootDir>/src/test-utils/**/*.js"
+      ]
   }
 }

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have home as link when not on home route 1`] = `
+<a
+  href="/"
+>
+  Home
+</a>
+`;
+
+exports[`should have home not as link when on home route 1`] = `
+<span>
+  Home
+</span>
+`;
+
+exports[`should have todos example as link when not on todos route 1`] = `
+<a
+  href="/todos"
+>
+  Todos Example
+</a>
+`;
+
+exports[`should have todos example not as link when on todos route 1`] = `
+<span>
+  Todos Example
+</span>
+`;
