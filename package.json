@@ -10,13 +10,19 @@
   },
   "devDependencies": {
     "@testing-library/react": "^8.0.4",
-    "jest-dom": "^3.5.0"
+    "cypress": "^3.3.2",
+    "jest-dom": "^3.5.0",
+    "start-server-and-test": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:no-browser": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress": "start-server-and-test start:no-browser http://localhost:3000 cypress:run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,11 +40,11 @@
     ]
   },
   "jest": {
-    "collectCoverageFrom" : [
+    "collectCoverageFrom": [
       "<rootDir>/src/**/*.js",
-       "!<rootDir>/src/index.js" , 
-       "!<rootDir>/src/serviceWorker.js",
-       "!<rootDir>/src/test-utils/**/*.js"
-      ]
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/src/test-utils/**/*.js"
+    ]
   }
 }
